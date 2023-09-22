@@ -4,7 +4,7 @@ spring:
       database: 1
       host: localhost
       port: 6379
-      #password:
+      password: apitable@com
       #timeout: 6000ms  # 连接超时时长（毫秒）
   datasource:
     dynamic:
@@ -19,10 +19,10 @@ spring:
       datasource:
         master:
           # MySQL8
-          driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://localhost:3306/maku_boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
-          username: maku
-          password: 123456
+          #driver-class-name: com.mysql.cj.jdbc.Driver
+          #url: jdbc:mysql://localhost:3306/maku_boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+          #username: maku
+          #password: 123456
           # 达梦
           #    driver-class-name: dm.jdbc.driver.DmDriver
           #    url: jdbc:dm://192.168.3.19:5236/maku_boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
@@ -34,7 +34,7 @@ spring:
           #    username: postgres
           #    password: 123456
           # h2
-          #    url: jdbc:h2:file:${user.home}/.maku/maku_boot;DB_CLOSE_ON_EXIT=FALSE;IFEXISTS=FALSE;DB_CLOSE_DELAY=-1;
-          #    username: maku_boot
-          #    password: 123456
-          #    driver-class-name: org.h2.Driver
+          url: jdbc:h2:file:${user.home}/.maku/maku_boot;DB_CLOSE_ON_EXIT=FALSE;IFEXISTS=FALSE;DB_CLOSE_DELAY=-1;
+          username: maku_boot
+          password: 123456
+          driver-class-name: org.h2.Driver

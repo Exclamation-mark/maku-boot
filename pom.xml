@@ -71,6 +71,11 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>net.maku</groupId>
+                <artifactId>maku-generator-boot-starter</artifactId>
+                <version>3.0.2</version>
+            </dependency>
+            <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatisplus.version}</version>
