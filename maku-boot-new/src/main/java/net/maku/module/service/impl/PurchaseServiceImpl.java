@@ -13,6 +13,7 @@ import net.maku.module.entity.PurchaseEntity;
 import net.maku.module.query.PurchaseQuery;
 import net.maku.module.service.PurchaseService;
 import net.maku.module.vo.PurchaseVO;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -26,14 +27,33 @@ public class PurchaseServiceImpl extends BaseServiceImpl<PurchaseDao, PurchaseEn
 
     }
 
+    @Override
+    public void saveVO(PurchaseVO vo) {
+        PurchaseEntity entity = PurchaseConvert.INSTANCE.convert(vo);
+        if (StringUtils.isEmpty(entity.getStatus())){
+            entity.setStatus("1");
+        }
+        baseMapper.insert(entity);
+    }
+
+    @Override
+    public void updateVo(PurchaseVO vo) {
+        PurchaseEntity entity = PurchaseConvert.INSTANCE.convert(vo);
+        if (StringUtils.isEmpty(entity.getStatus())){
+            entity.setStatus("1");
+        }
+        baseMapper.updateById(entity);
+    }
 
 
     private LambdaQueryWrapper<PurchaseEntity> getWrapper(PurchaseQuery query){
         LambdaQueryWrapper<PurchaseEntity> wrapper = Wrappers.lambdaQuery();
-        wrapper.like(StrUtil.isNotBlank(query.getName()), PurchaseEntity::getItemName, query.getName())
-                .or(i -> i.like(StrUtil.isNotBlank(query.getReason()), PurchaseEntity::getPurchaseReason, query.getReason())
-                        .and(ii->ii.apply("1=1")
-                ));
+        if (StrUtil.isNotBlank(query.getReason())) {
+            wrapper.or(i -> i.like(StrUtil.isNotBlank(query.getReason()), PurchaseEntity::getPurchaseReason, query.getReason()));
+        }
+        if (StrUtil.isNotBlank(query.getName())) {
+            wrapper.like(StrUtil.isNotBlank(query.getName()), PurchaseEntity::getItemName, query.getName());
+        }
         return wrapper;
     }
 }
