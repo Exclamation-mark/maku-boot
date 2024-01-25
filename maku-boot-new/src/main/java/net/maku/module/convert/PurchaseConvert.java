@@ -13,5 +13,7 @@ public interface PurchaseConvert {
 
     PurchaseVO convert(PurchaseEntity entity);
 
+    PurchaseEntity convert(PurchaseVO entity);
+
     List<PurchaseVO> convertList(List<PurchaseEntity> list);
 }

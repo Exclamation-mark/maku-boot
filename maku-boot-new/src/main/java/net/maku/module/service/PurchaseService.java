@@ -11,4 +11,8 @@ public interface PurchaseService extends BaseService<PurchaseEntity> {
 
 
     PageResult<PurchaseVO> page(PurchaseQuery query);
+
+    void saveVO(PurchaseVO vo);
+
+    void updateVo(PurchaseVO vo);
 }

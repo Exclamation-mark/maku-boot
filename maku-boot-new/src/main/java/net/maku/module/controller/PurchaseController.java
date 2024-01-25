@@ -7,20 +7,23 @@ import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import net.maku.framework.common.utils.PageResult;
 import net.maku.framework.common.utils.Result;
+import net.maku.framework.operatelog.annotations.OperateLog;
+import net.maku.framework.operatelog.enums.OperateTypeEnum;
+import net.maku.module.convert.PurchaseConvert;
+import net.maku.module.entity.PurchaseEntity;
 import net.maku.module.query.PurchaseQuery;
 import net.maku.module.service.PurchaseService;
 import net.maku.module.vo.PurchaseVO;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("ass/check")
 @Tag(name = "资产管理")
 @AllArgsConstructor
-
 public class PurchaseController {
     private final PurchaseService purchaseService;
 
@@ -30,5 +33,34 @@ public class PurchaseController {
         PageResult<PurchaseVO> page = purchaseService.page(query);
 
         return Result.ok(page);
+    }
+
+    @PostMapping
+    @Operation(summary = "保存")
+    @OperateLog(type = OperateTypeEnum.INSERT)
+    public Result<String> save(@RequestBody @Valid PurchaseVO vo) {
+        purchaseService.saveVO(vo);
+
+        return Result.ok();
+    }
+
+    @PutMapping
+    @Operation(summary = "更新")
+    @OperateLog(type = OperateTypeEnum.INSERT)
+    public Result<String> update(@RequestBody @Valid PurchaseVO vo) {
+        purchaseService.updateVo(vo);
+
+        return Result.ok();
+    }
+
+
+    @GetMapping("{id}")
+    @Operation(summary = "信息")
+    public Result<PurchaseVO> get(@PathVariable("id") Long id) {
+        PurchaseEntity entity = purchaseService.getById(id);
+
+        PurchaseVO vo = PurchaseConvert.INSTANCE.convert(entity);
+
+        return Result.ok(vo);
     }
 }

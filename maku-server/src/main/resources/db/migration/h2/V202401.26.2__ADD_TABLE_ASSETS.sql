@@ -4,7 +4,7 @@ VALUES (1007, 1002, '资产概览', 'ass/check/overview', 'ass:check:overview', 
         now());
 
 CREATE TABLE purchase (
-                          id INT PRIMARY KEY COMMENT '采购单ID',
+                          id INT AUTO_INCREMENT PRIMARY KEY COMMENT '采购单ID',
                           version INT COMMENT '版本号',
                           deleted INT COMMENT '删除标志',
                           creator INT COMMENT '创建者ID',
