@@ -53,6 +53,16 @@ public class PurchaseController {
         return Result.ok();
     }
 
+    @PutMapping("reSubmit")
+    @Operation(summary = "更新")
+    @OperateLog(type = OperateTypeEnum.INSERT)
+    public Result<String> reSubmit(@RequestBody @Valid PurchaseVO vo) {
+        vo.setStatus("1");
+        purchaseService.updateVo(vo);
+
+        return Result.ok();
+    }
+
 
     @GetMapping("{id}")
     @Operation(summary = "信息")
@@ -61,6 +71,34 @@ public class PurchaseController {
 
         PurchaseVO vo = PurchaseConvert.INSTANCE.convert(entity);
 
+        return Result.ok(vo);
+    }
+
+
+
+    @PostMapping("/attach/{id}")
+    @Operation(summary = "信息")
+    public Result<PurchaseVO> addAttach(@PathVariable("id") Long id,
+                                        @RequestBody PurchaseVO oo) {
+        PurchaseEntity entity = purchaseService.getById(id);
+
+        PurchaseVO vo = PurchaseConvert.INSTANCE.convert(entity);
+
+        vo.setApprovalStatus(oo.getApprovalStatus());
+        purchaseService.updateVo(vo);
+        return Result.ok(vo);
+    }
+
+
+    @GetMapping("/{id}/{status}")
+    @Operation(summary = "更新状态")
+    public Result<PurchaseVO> get(@PathVariable("id") Long id,
+                                  @PathVariable("status") String status) {
+        PurchaseEntity entity = purchaseService.getById(id);
+
+        PurchaseVO vo = PurchaseConvert.INSTANCE.convert(entity);
+        vo.setStatus(status);
+        purchaseService.updateVo(vo);
         return Result.ok(vo);
     }
 }

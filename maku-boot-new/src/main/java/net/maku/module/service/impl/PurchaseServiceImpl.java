@@ -54,6 +54,10 @@ public class PurchaseServiceImpl extends BaseServiceImpl<PurchaseDao, PurchaseEn
         if (StrUtil.isNotBlank(query.getName())) {
             wrapper.like(StrUtil.isNotBlank(query.getName()), PurchaseEntity::getItemName, query.getName());
         }
+
+        if (query.getStatus() != null && !query.getStatus().isEmpty()) {
+            wrapper.in(PurchaseEntity::getStatus, query.getStatus());
+        }
         return wrapper;
     }
 }

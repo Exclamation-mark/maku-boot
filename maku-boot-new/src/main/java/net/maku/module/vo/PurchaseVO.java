@@ -71,7 +71,7 @@ public class PurchaseVO implements Serializable, TransPojo {
     @Schema(description = "采购状态")
     private String status;
 
-    @Schema(description = "审批状态")
+    @Schema(description = "附件照片")
     private String approvalStatus;
 
     @Schema(description = "审批备注")

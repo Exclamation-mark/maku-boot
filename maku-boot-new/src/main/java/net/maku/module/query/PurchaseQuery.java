@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import net.maku.framework.common.query.Query;
 
+import java.util.List;
+
 /**
  * 资产 查询
  *
@@ -21,5 +23,8 @@ public class PurchaseQuery extends Query {
 
     @Schema(description = "申请理由")
     private String reason;
+
+    @Schema(description = "状态")
+    private List<String> status;
 
 }
