@@ -13,9 +13,4 @@ maku-boot 是采用组件模式，扩展不同的业务功能，可以很方便�
 ```
 
 ## SQL语句
-引入组件时，还需要执行对应的SQL文件，初始化表结构和菜单等。
-如果使用的是MySQL数据库，则需要执行以下SQL文件：
-
-```
-maku-boot/db/mysql/module/maku-module-quartz.sql
-```
+默认自动执行sql 数据库文件。创建数据库表，插入默认数据。

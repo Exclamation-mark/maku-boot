@@ -33,3 +33,8 @@ spring:
           #    url: jdbc:postgresql://192.168.3.19:5432/postgres
           #    username: postgres
           #    password: 123456
+          # h2
+          #    url: jdbc:h2:file:${user.home}/.maku/maku_boot;DB_CLOSE_ON_EXIT=FALSE;IFEXISTS=FALSE;DB_CLOSE_DELAY=-1;
+          #    username: maku_boot
+          #    password: 123456
+          #    driver-class-name: org.h2.Driver
