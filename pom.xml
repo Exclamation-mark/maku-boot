@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>net.maku</groupId>
-    <artifactId>maku-boot</artifactId>
+    <groupId>net.xsn</groupId>
+    <artifactId>xsn-boot</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
-    <name>maku-boot</name>
-    <description>maku-boot</description>
-    <url>https://maku.net</url>
+    <name>xsn-boot</name>
+    <description>xsn-boot</description>
+    <url>https://xsn.net</url>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -17,12 +17,12 @@
     </parent>
 
     <modules>
-        <module>maku-boot-new</module>
-        <module>maku-boot-system</module>
-        <module>maku-boot-module</module>
-        <module>maku-boot-api</module>
-        <module>maku-framework</module>
-        <module>maku-server</module>
+        <module>xsn-boot-new</module>
+        <module>xsn-boot-system</module>
+        <module>xsn-boot-module</module>
+        <module>xsn-boot-api</module>
+        <module>xsn-framework</module>
+        <module>xsn-server</module>
     </modules>
 
     <properties>
