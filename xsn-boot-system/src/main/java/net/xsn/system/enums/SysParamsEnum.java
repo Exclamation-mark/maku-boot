@@ -3,8 +3,7 @@ package net.xsn.system.enums;
 /**
  * 系统参数 枚举
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public enum SysParamsEnum {
     /**

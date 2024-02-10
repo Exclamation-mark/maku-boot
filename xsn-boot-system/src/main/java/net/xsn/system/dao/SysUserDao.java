@@ -12,8 +12,7 @@ import java.util.Map;
 /**
  * 系统用户
  * 
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Mapper
 public interface SysUserDao extends BaseDao<SysUserEntity> {

@@ -6,8 +6,7 @@ import lombok.Getter;
 /**
  * 定时任务状态枚举
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Getter
 @AllArgsConstructor

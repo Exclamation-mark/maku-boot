@@ -10,8 +10,7 @@ import java.util.Date;
 /**
  * mybatis-plus 自动填充字段
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public class FieldMetaObjectHandler implements MetaObjectHandler {
     private final static String CREATE_TIME = "createTime";

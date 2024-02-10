@@ -10,8 +10,7 @@ import java.util.List;
 /**
  * 附件管理
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Mapper
 public interface SysAttachmentConvert {

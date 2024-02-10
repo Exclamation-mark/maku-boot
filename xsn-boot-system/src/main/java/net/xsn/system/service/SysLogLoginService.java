@@ -9,8 +9,7 @@ import net.xsn.system.vo.SysLogLoginVO;
 /**
  * 登录日志
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public interface SysLogLoginService extends BaseService<SysLogLoginEntity> {
 

@@ -8,8 +8,7 @@ import java.util.Objects;
 /**
  * 超级管理员枚举
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Getter
 @AllArgsConstructor

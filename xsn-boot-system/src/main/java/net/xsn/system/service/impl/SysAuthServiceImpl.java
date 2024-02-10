@@ -20,8 +20,7 @@ import org.springframework.stereotype.Service;
 /**
  * 权限认证服务
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Service
 @AllArgsConstructor

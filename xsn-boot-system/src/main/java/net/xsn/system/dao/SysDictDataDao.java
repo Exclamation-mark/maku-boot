@@ -12,8 +12,7 @@ import java.util.List;
 /**
  * 字典数据
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Mapper
 public interface SysDictDataDao extends BaseDao<SysDictDataEntity> {

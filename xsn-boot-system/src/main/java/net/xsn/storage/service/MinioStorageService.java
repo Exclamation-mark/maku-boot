@@ -16,8 +16,7 @@ import java.util.Optional;
 /**
  * Minio存储
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public class MinioStorageService extends StorageService {
     private final MinioClient minioClient;

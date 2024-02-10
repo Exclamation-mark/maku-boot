@@ -3,8 +3,7 @@ package net.xsn.framework.security.mobile;
 /**
  * 手机短信登录，验证码效验
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public interface MobileVerifyCodeService {
 

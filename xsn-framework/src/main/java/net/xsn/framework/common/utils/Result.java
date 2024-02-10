@@ -7,8 +7,7 @@ import net.xsn.framework.common.exception.ErrorCode;
 /**
  * 响应数据
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Data
 @Schema(description = "响应")

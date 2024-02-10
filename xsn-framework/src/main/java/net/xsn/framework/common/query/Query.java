@@ -9,8 +9,7 @@ import org.hibernate.validator.constraints.Range;
 /**
  * 查询公共参数
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Data
 public class Query {

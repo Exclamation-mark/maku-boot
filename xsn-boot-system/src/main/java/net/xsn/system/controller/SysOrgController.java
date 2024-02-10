@@ -19,8 +19,7 @@ import java.util.List;
 /**
  * 机构管理
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @RestController
 @RequestMapping("sys/org")

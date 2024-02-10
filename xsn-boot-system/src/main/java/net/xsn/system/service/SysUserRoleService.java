@@ -8,8 +8,7 @@ import java.util.List;
 /**
  * 用户角色关系
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public interface SysUserRoleService extends BaseService<SysUserRoleEntity> {
 

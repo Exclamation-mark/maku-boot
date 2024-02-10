@@ -13,8 +13,7 @@ import java.io.IOException;
 /**
  * Xss 过滤器
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @AllArgsConstructor
 public class XssFilter extends OncePerRequestFilter {

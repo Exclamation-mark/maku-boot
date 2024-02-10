@@ -11,8 +11,7 @@ import java.util.Date;
 /**
  * 存储服务
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public abstract class StorageService {
     public StorageProperties properties;

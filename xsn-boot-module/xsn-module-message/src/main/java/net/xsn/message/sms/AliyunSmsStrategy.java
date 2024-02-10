@@ -16,8 +16,7 @@ import java.util.Map;
 /**
  * 阿里云短信
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Slf4j
 public class AliyunSmsStrategy implements SmsStrategy {

@@ -6,8 +6,7 @@ import lombok.Getter;
 /**
  * 数据范围枚举
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Getter
 @AllArgsConstructor

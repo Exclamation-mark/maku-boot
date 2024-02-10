@@ -15,8 +15,7 @@ import java.io.InputStream;
 /**
  * 七牛云存储
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public class QiniuStorageService extends StorageService {
     private final UploadManager uploadManager;

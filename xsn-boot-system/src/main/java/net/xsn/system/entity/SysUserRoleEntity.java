@@ -8,8 +8,7 @@ import net.xsn.framework.mybatis.entity.BaseEntity;
 /**
  * 用户角色关系
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Data
 @EqualsAndHashCode(callSuper=false)

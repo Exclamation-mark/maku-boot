@@ -12,8 +12,7 @@ import java.util.Date;
 /**
  * 短信日志
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Data
 @EqualsAndHashCode(callSuper=false)

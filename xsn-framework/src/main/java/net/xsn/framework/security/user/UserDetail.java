@@ -14,8 +14,7 @@ import java.util.stream.Collectors;
 /**
  * 登录用户信息
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Data
 public class UserDetail implements UserDetails {

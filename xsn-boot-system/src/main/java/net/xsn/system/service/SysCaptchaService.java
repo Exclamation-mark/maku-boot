@@ -5,8 +5,7 @@ import net.xsn.system.vo.SysCaptchaVO;
 /**
  * 验证码
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public interface SysCaptchaService {
     /**

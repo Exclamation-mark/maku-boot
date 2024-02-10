@@ -16,8 +16,7 @@ import java.util.Properties;
 /**
  * 允许访问的资源
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Component
 public class PermitResource {

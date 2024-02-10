@@ -8,8 +8,7 @@ import net.xsn.system.vo.SysUserTokenVO;
 /**
  * 权限认证服务
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 public interface SysAuthService {
 

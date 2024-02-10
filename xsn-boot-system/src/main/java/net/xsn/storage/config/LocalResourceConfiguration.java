@@ -12,8 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * 本地资源映射配置
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Configuration
 @ConditionalOnProperty(prefix = "storage", value = "enabled")

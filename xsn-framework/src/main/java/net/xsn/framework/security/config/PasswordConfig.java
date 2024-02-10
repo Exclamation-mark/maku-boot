@@ -8,8 +8,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 /**
  * 加密配置
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @Configuration
 public class PasswordConfig {

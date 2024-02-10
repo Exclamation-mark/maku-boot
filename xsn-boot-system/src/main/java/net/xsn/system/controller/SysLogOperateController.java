@@ -18,8 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 操作日志
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://xsn.net">xsn</a>
+ * @author zzq ziqiangytu@gmail.com
  */
 @RestController
 @RequestMapping("sys/log/operate")
