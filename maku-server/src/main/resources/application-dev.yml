@@ -30,7 +30,7 @@ spring:
           #    password: 12345678
           # PostgreSQL
           driver-class-name: org.postgresql.Driver
-          url: jdbc:postgresql://192.168.110.36:5432/tuoguanyi?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+          url: jdbc:postgresql://192.168.110.251:5432/tuoguanyi1?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
           username: root
           password: 123456
           # h2
