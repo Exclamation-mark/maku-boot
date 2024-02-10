@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan({"net.xsn.**", "net.maku.**"})
-@MapperScan({"net.maku.*.entity", "net.xsn.*.entity"})
+@MapperScan({"net.maku.*.dao", "net.xsn.*.dao"})
 public class ServerApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
